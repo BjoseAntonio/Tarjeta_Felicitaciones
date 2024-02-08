@@ -1,0 +1,98 @@
+/* :root{
+
+} */
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px; /*1rem = 10px*/
+    font-family: var(--texto_principal);
+    background: rgb(101,42,99);
+    background: linear-gradient(30deg, rgba(101,42,99,1) 2%, rgba(177,68,181,1) 47%, rgba(38,52,55,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+h1, h2, h3, h4{
+    line-height: 1.2;
+}
+
+/*Utilizadas*/
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+centrar
+
+
+
+
+.animatedObject {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.led-contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.led-letter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff0000; /* Color de la luz LED */
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Sombra para simular el efecto LED */
+    margin: 0 10px;
+}
