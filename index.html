@@ -7,10 +7,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class="contenedor ">
+   <div class="contenedor login">
     <h2 class="centrar-texto">Iniciar Sesión</h2>
         <form class="formulario">
-            
+            <div class="formato">
+                <div class="formato__registro">
+                    <div class="formato__icono">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
+                    </div>
+                    <input type="text" placeholder="Nombre de usuario"
+                    class="centrar-texto formato__input">
+                </div>
+
+                <div class="formato__registro">
+                    <div class="formato__icono">
+                        <svg for="username" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock-open" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 11m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
+                            <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M8 11v-5a4 4 0 0 1 8 0" />
+                          </svg>
+                    </div>
+                    <input type="text" name="username" placeholder="Contraseña" class="centrar-texto formato__input">
+                </div>
+
+                <button type="submit" class="boton">Acceder</button>
+            </div>
+
         </form>
    </div>
 </body>

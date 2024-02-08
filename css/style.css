@@ -17,7 +17,8 @@ body{
     background: rgb(101,42,99);
     background: linear-gradient(30deg, rgba(101,42,99,1) 2%, rgba(177,68,181,1) 47%, rgba(38,52,55,1) 100%);
     background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 100vh;
+
 }
 
 .contenedor{
@@ -59,10 +60,52 @@ h1, h2, h3, h4{
     text-align: center;
 }
 
-centrar
+
+/*Pagina de login*/
+.login{
+    
+    height: 50rem;
+    
+}
 
 
+.formato__registro{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 2rem;
+}
 
+.formato__icono{
+    background-color: white;
+    border-radius: 10rem;
+    padding: .5rem;
+    margin-right: -1rem;
+    z-index: 1;
+}
+
+
+.formato__input{
+    background-color: transparent;
+    display: block;
+    font-weight: 400;
+    border-radius: 3rem;
+    width: 40rem;
+    
+}
+
+.boton{
+    display: block;
+    font-family: var(--estilo-letra_2);
+    font-weight: 700;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+    
 
 .animatedObject {
     width: 100px;
