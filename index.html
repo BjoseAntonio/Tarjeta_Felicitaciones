@@ -13,10 +13,10 @@
 <body>
    <div class="contenedor login">
     <h2 class="centrar-texto">Iniciar Sesión</h2>
-        <form class="formulario">
+        <form class="formulario" id="loginForm" onsubmit="return validarFormulario()">
             <div class="formato">
                 <div class="formato__registro">
-                    <div class="formato__icono">
+                    <div class="formato__icono formato__icono--izq">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
@@ -24,7 +24,8 @@
                         </svg>
                     </div>
                     <input type="text" placeholder="Nombre de usuario"
-                    class="centrar-texto formato__input">
+                    class="centrar-texto formato__input"
+                    id="username">
                 </div>
 
                 <div class="formato__registro">
@@ -36,13 +37,19 @@
                             <path d="M8 11v-5a4 4 0 0 1 8 0" />
                           </svg>
                     </div>
-                    <input type="password" name="username" placeholder="Contraseña" class="centrar-texto formato__input">
-                </div>
+                    <input type="password" name="username" placeholder="Contraseña" class="centrar-texto formato__input"
+                    id="password">
+                </div >
 
-                <button type="submit" class="boton">Acceder</button>
+                <div class="formato__acceso">
+                    <button type="submit" class="boton ">Acceder</button>
+                </div>
+                <p id="message" class="centrar-texto"></p>
             </div>
 
         </form>
+
+        <script src="js/script.js"></script>
    </div>
 </body>
 </html>
