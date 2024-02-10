@@ -130,6 +130,7 @@ h1, h2, h3, h4{
     text-transform: uppercase;
     font-size: 1.8rem;
     width: 85%;
+    border: none;
 }
 
 .boton:hover{
@@ -138,26 +139,7 @@ h1, h2, h3, h4{
 
     
 
-.animatedObject {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: move 2s infinite alternate;
-}
-
-@keyframes move {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
+/*Inicio*/
 .led-contenedor{
     display: flex;
     justify-content: center;
@@ -166,7 +148,59 @@ h1, h2, h3, h4{
 .led-letter {
     font-size: 50px;
     font-weight: bold;
-    color: #ff0000; /* Color de la luz LED */
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Sombra para simular el efecto LED */
+    color: #d3dbd4d3; /* Color de la luz LED */
+    text-shadow: 0 0 10px #d842e5, 0 0 20px #ff00e6, 0 0 30px #560280; /* Sombra para simular el efecto LED */
+    animation: parpadeo 1s infinite alternate;
     margin: 0 10px;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 0.2;
+        color: #FF0000; /* Color rojo */
+    }
+    20% {
+        opacity: 1;
+        color: #00FF00; /* Color verde */
+    }
+    40% {
+        opacity: 1;
+        color: #00ccff; /* Color verde */
+    }
+    60% {
+        opacity: 0.2;
+        color: #fffb00; /* Color rojo */
+    }
+    80% {
+        opacity: 1;
+        color: #ff00e6; /* Color verde */
+    }
+    100% {
+        opacity: 1;
+        color: #ff006a; /* Color verde */
+    }
+}
+
+.regalo{
+    height: 20rem;
+}
+
+.regalo:hover{
+
+}
+.animatedObject {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: move 4s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
