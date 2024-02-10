@@ -8,14 +8,56 @@
 </head>
 <body>
     <div class="contenedor">
-        <div class="led-contenedor">
-            <div class="led-letter  centrar-texto">Feliz Cumpleaños</div>
+        <div class="audio-container">
+            <audio id="audio" loop>
+                <source src="audio/happyBrithday.mp3" type="audio/mpeg">
+            </audio>
+            <button id="toggleButton" onclick="toggleSound()">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="muteIcon" id="muteIcon" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 3l18 18" />
+                        <path d="M4 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />
+                        <path d="M17 13h1a2 2 0 0 1 2 2v1m-.589 3.417c-.361 .36 -.86 .583 -1.411 .583h-1a2 2 0 0 1 -2 -2v-3" />
+                        <path d="M4 15v-3c0 -2.21 .896 -4.21 2.344 -5.658m2.369 -1.638a8 8 0 0 1 11.287 7.296v3" />
+                      </svg>
+    
+                      <svg xmlns="http://www.w3.org/2000/svg" class="speakerIcon" id="speakerIcon"  width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />
+                        <path d="M15 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />
+                        <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+                      </svg>
+                </div>
+            </button>
+
         </div>
-        <div class="animatedObject">
-            <div class="led-contenedor regalo">
-                <img src="img/regalo.png" alt="">
+        <div class="led-contenedor">
+            <!-- <div class="led-letter  centrar-texto">FELIZ CUMPLEAÑOS</div> -->
+             <div class="led-letter  centrar-texto">hola</div>
+        </div>
+
+        <div class="card">
+            <!-- <div class="card__front face img">
+                <div class="animatedObject">
+                    <img src="img/regalo.png" alt="" class="regalo">
+                </div>
+                <div class="letra__h2">
+                    <h2 class="centrar-texto ">Regalo</h2>
+                </div>
+            </div> -->
+
+            <div class="card__back face">
+                <h2>hola</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores assumenda ipsum sint repudiandae velit, provident quisquam amet dolor tenetur blanditiis, eos et odit enim ducimus laudantium dolorem. Adipisci, aut iste?</p>
+
+                <div class="link">
+                    <a href="#">link</a>
+                </div>
+
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

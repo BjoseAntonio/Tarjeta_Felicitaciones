@@ -137,7 +137,28 @@ h1, h2, h3, h4{
    opacity: .8;
 }
 
-    
+
+/* Sonido */
+
+.audio-container{
+    position: relative;
+    z-index: 1;
+}
+
+#audio{
+    display: none;
+}
+
+#toggleButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    stroke: white;
+}
+
 
 /*Inicio*/
 .led-contenedor{
@@ -181,13 +202,61 @@ h1, h2, h3, h4{
     }
 }
 
+
+/*CARD*/
+
+.card{
+    position: relative;
+    height: 35rem;
+    width: 30rem;
+    margin: 10rem auto;
+}
+
+.img{
+    background-image: url(../img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 3rem;
+    background-color: #00ccff;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card__front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 50px 50px #141414;
+}
+
+h2{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0, .3);
+    width: 100%;
+    height: 50px;
+    color: #d842e5;
+    font-size: 4rem;
+    padding: 2rem auto ;
+    line-height: 40px;
+    
+}
+
+
+
+
+
 .regalo{
     height: 20rem;
 }
 
-.regalo:hover{
-
-}
 .animatedObject {
     position: absolute;
     top: 50%;
