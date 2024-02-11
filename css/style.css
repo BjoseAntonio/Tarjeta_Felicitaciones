@@ -225,7 +225,7 @@ h1, h2, h3, h4{
     height: 100%;
     backface-visibility: hidden;
     border-radius: 3rem;
-    background-color: #00ccff;
+    background-color: #0b9fc4;
     overflow: hidden;
     transition: .5s;
 }
@@ -235,7 +235,7 @@ h1, h2, h3, h4{
     box-shadow: 0 50px 50px #141414;
 }
 
-h2{
+.front__h2{
     position: absolute;
     bottom: 0;
     margin: 0;
@@ -249,12 +249,9 @@ h2{
     
 }
 
-
-
-
-
 .regalo{
     height: 20rem;
+    opacity: .3;
 }
 
 .animatedObject {
@@ -273,3 +270,49 @@ h2{
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+.card__back{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 50px 50px #141414;
+}
+
+.back__h2{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    line-height: 4rem;
+    font-size: 4rem;
+    font-family: var(--fuente-principal);
+    width: 100%;
+    height: 50px;
+}
+
+.card__contenido{
+    margin-top: 5rem;
+    display: grid;
+    width: 90%;
+    height: 20rem;
+    grid-template-areas: 'texto1 texto1',
+                         'img  texto2';
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card__elemento--1{
+    grid-area: 'texto1';
+}
+.card__elemento--2{
+    grid-area: 'texto2';
+}
+
+.card__elemento--3{
+    grid-area: 'img';
+}
+
+
+img{
+    width:50%;
+}
+
+
+
