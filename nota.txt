@@ -3,3 +3,6 @@ pendientes
 fuente prioncipal cambiar 
 boton 
 asignar texto de felicitaciones 
+ajuste de img pastel responsive
+ajuste de margen de abajo 
+girar carta con click

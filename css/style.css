@@ -218,10 +218,10 @@ a{
 
 .card{
     position: relative;
-    height: 35rem;
+    height: 40rem;
     width: 30rem;
-    margin: 10rem auto;
-    
+    margin: 5rem auto;
+    perspective: 1000px; 
 }
 
 .img{
@@ -253,7 +253,7 @@ a{
 }
 
 .card__front{
-    transform: perspective(600px) rotateY(0deg);
+    /* transform: perspective(600px) rotateY(0deg); */
     box-shadow: 0 50px 50px #141414;
 }
 
@@ -276,6 +276,7 @@ a{
     height: 13rem;
     width: auto;
     opacity: .3;
+    
 }
 
 .animatedObject {
@@ -300,7 +301,7 @@ a{
 
 
 .card__back{
-    transform: perspective(600px) rotateY(180deg);
+    transform: /*perspective(600px)*/ rotateY(180deg);
     box-shadow: 0 50px 50px #141414;
 }
 
@@ -370,13 +371,26 @@ img{
     width: 90%;
 }
 
-.card:hover .card__front {
-    transform: rotateY(180deg); /* Gira la cara frontal en hover */
+
+.girada{
+    transform: rotatey(180deg);
 }
 
-.card:hover .card__back {
-    transform: rotateY(0); /* Gira la cara trasera en hover */
+@media (min-width: 768px) {
+    .card:hover .card__front {
+        transform: rotateY(180deg); /* Gira la cara frontal en hover */
+    }
+    
+    .card:hover .card__back {
+        transform: rotateY(0); /* Gira la cara trasera en hover */
+    }
 }
+
+
+
+
+
+
 
 /*Globos*/
 .contenido__globos{
@@ -417,23 +431,23 @@ img{
 }
 
 .globo:nth-child(1){
-    left: 0%;
+    left: -5%;
     animation-delay: 0s;
 }
 .globo:nth-child(2){
-    left: 25%;
+    left: 20%;
     animation-delay: 3s;
 }
 .globo:nth-child(3){
-    left: 50%;
+    left: 40%;
     animation-delay: 1s;
 }
 .globo:nth-child(4){
-    left: 75%;
+    left: 65%;
     animation-delay: 6s;
 }
 .globo:nth-child(5){
-    left: 90%;
+    left: 80%;
     animation-delay: 4s;
 }
 

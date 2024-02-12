@@ -69,3 +69,8 @@ function toggleSound() {
 //         contenedor.appendChild(globo);
 //     }
 // });
+
+
+document.getElementById("card").addEventListener("click",function(){
+    this.classList.toggle("girada")
+});
