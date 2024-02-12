@@ -56,3 +56,16 @@ function toggleSound() {
         muteIcon.style.display = "inline";
     }
 }
+
+// document.addEventListener('DOMContentLoaded', function(){
+//     const numGlobos = 5; // Número de globos
+//     const contenedor = document.getElementById("contenido__globos");
+
+//     for (let i = 0; i < numGlobos; i++) {
+//         const globo = document.createElement("div");
+//         globo.classList.add("globo");
+//         globo.style.left = `${Math.random() * 100}vw`; // Posición horizontal aleatoria
+//         globo.style.bottom = `${Math.random() * 100}vh`; // Posición vertical aleatoria
+//         contenedor.appendChild(globo);
+//     }
+// });

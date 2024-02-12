@@ -1,0 +1,5 @@
+pendientes
+
+fuente prioncipal cambiar 
+boton 
+asignar texto de felicitaciones 
