@@ -31,10 +31,6 @@ body{
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
-    overflow-y: hidden;
-    
-   
-
 }
 
 /* Globales */
@@ -251,6 +247,7 @@ p{
 
 /*CARD*/
 .tarjeta{
+    height: 40rem;
     width: 30rem;
     position: relative;
     margin: 2rem auto;
@@ -283,7 +280,7 @@ p{
 }
 
 .tarjeta__front--img{
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -310,7 +307,6 @@ p{
 }
 
 .tarjeta__front{
-    height: 40rem;
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 50px 50px #141414;
 }
@@ -369,6 +365,12 @@ p{
     background-color: rgb(0, 0, 0, .5);
 }
 
+.centrar{
+    display: flex;
+    flex-direction: column;
+    margin: 7rem auto;
+}
+
 .tarjeta__back__contenido{
     margin: 5rem auto;
     padding: 0;
@@ -386,7 +388,7 @@ p{
 .back__h2{
     position: absolute;
     top: 0;
-    margin: 0;
+    margin: 3rem 0 0 0;
     line-height: 3rem;
     font-size: 2.4rem;
     font-family: var(--fuente-principal);
