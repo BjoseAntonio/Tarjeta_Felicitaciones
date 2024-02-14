@@ -280,7 +280,9 @@ p{
 }
 
 .tarjeta__front--img{
-    background-image: url(../img/3.jpg);
+    /* background-image: url(../img/3.jpg); */
+    background-color: #000000;
+    opacity: .7;
     background-size: cover;
     background-repeat: no-repeat;
 }
