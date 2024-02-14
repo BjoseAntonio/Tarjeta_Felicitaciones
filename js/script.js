@@ -1,3 +1,20 @@
+// Sonido
+function toggleSound() {
+    var audio = document.getElementById("audio");
+    var speakerIcon = document.getElementById("speakerIcon");
+    var muteIcon = document.getElementById("muteIcon");
+
+    if (audio.paused) {
+        audio.play();
+        speakerIcon.style.display = "inline";
+        muteIcon.style.display = "none";
+    } else {
+        audio.pause();
+        speakerIcon.style.display = "none";
+        muteIcon.style.display = "inline";
+    }
+}
+
 function validarFormulario(){
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
@@ -38,23 +55,6 @@ function mostrarMensaje(mesaje){
 
 function limpiarMensaje(){
     document.getElementById("message").textContent = "";
-}
-
-// Sonido
-function toggleSound() {
-    var audio = document.getElementById("audio");
-    var speakerIcon = document.getElementById("speakerIcon");
-    var muteIcon = document.getElementById("muteIcon");
-
-    if (audio.paused) {
-        audio.play();
-        speakerIcon.style.display = "inline";
-        muteIcon.style.display = "none";
-    } else {
-        audio.pause();
-        speakerIcon.style.display = "none";
-        muteIcon.style.display = "inline";
-    }
 }
 
 // document.addEventListener('DOMContentLoaded', function(){

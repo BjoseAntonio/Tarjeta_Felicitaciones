@@ -7,70 +7,76 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="contenedor">
-        <div class="audio-container">
-            <audio id="audio" loop>
+    <main>
+        <div class="contenido__audio">
+            <audio id="audio" class="audio" loop>
                 <source src="audio/happyBrithday.mp3" type="audio/mpeg">
             </audio>
-            <button id="toggleButton" onclick="toggleSound()">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="muteIcon" id="muteIcon" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 3l18 18" />
-                        <path d="M4 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />
-                        <path d="M17 13h1a2 2 0 0 1 2 2v1m-.589 3.417c-.361 .36 -.86 .583 -1.411 .583h-1a2 2 0 0 1 -2 -2v-3" />
-                        <path d="M4 15v-3c0 -2.21 .896 -4.21 2.344 -5.658m2.369 -1.638a8 8 0 0 1 11.287 7.296v3" />
-                      </svg>
+            <button id="play__btn" onclick="toggleSound()" class="play__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="muteIcon silencio__btn" id="muteIcon" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 3l18 18" />
+                    <path d="M4 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />
+                    <path d="M17 13h1a2 2 0 0 1 2 2v1m-.589 3.417c-.361 .36 -.86 .583 -1.411 .583h-1a2 2 0 0 1 -2 -2v-3" />
+                    <path d="M4 15v-3c0 -2.21 .896 -4.21 2.344 -5.658m2.369 -1.638a8 8 0 0 1 11.287 7.296v3" />
+                    </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headphones speakerIcon" id="speakerIcon" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />
+                    <path d="M15 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />
+                    <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+                  </svg>       
     
-                      <svg xmlns="http://www.w3.org/2000/svg" class="speakerIcon" id="speakerIcon"  width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"  fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M4 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />
-                        <path d="M15 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />
-                        <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
-                      </svg>
-                </div>
             </button>
 
         </div>
+
         <div class="led-contenedor">
-            <div class="led-letter  centrar-texto">FELIZ CUMPLEAÑOS A MI</div>
-             <!-- <div class="led-letter  centrar-texto">hola</div> -->
-        </div>
-
-        <div class="card" id="card">
-            <div class="card__front face img">
-                <div class="animatedObject">
-                    <img src="img/pastel.png" alt="" class="pastel led-letter">
-                </div>
-                <div class="letra__h2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-360 giro" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M17 15.328c2.414 -.718 4 -1.94 4 -3.328c0 -2.21 -4.03 -4 -9 -4s-9 1.79 -9 4s4.03 4 9 4" />
-                    <path d="M9 13l3 3l-3 3" />
-                    </svg>
-                    <!-- <h2 class="centrar-texto front__h2 led-letter">**********</h2> -->
-                </div>
-            </div>
-
-            <div class="card__back face">
-                <h2 class="back__h2 centrar-texto">FELICITACIONES!!</h2>
-                <div class="card__contenido">
-                    <div class="card__elemento card__elemento--1">
-                        <p class="no-margin no-padding">Este es un pequeño comentario para crear y asignar el tamaño deciado de las letra y observar su diseño.</p>
-                    </div>
-                    <div class="card__elemento card__elemento--2">
-                        <p class="elemento__2">Este es un pequeño comentario para crear y asignar el tamaño deciado de las letra y observar su diseño.</p>
-                    </div>
-                    <div class="card__elemento card__elemento--3">
-                        <img src="img/presentacion.png" alt="">
-                    </div>
-                    <div class="card__elemento card__elemento--4">
-                        <button class="boton centrar-texto"><a href="whatsapp://send?phone=+526383841597">Tarjeta de regalo</a></button>
-                    </div>
-                </div>
+            <div class="led-letter  centrar-texto">Feliz cumpleaños
             </div>
         </div>
+    </main>
 
+    <div class="contenedor">
+        
+        <main>
+            <div class="tarjeta no-margin no-padding" id="tarjeta">
+                <div class="tarjeta__front tarjeta__cara tarjeta__front--img">
+                    <div class="animatedObject">
+                        <img src="img/pastel.png" alt="" class="pastel led-letter">
+                    </div>
+                    <div class="letra__h2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-360 giro" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M17 15.328c2.414 -.718 4 -1.94 4 -3.328c0 -2.21 -4.03 -4 -9 -4s-9 1.79 -9 4s4.03 4 9 4" />
+                        <path d="M9 13l3 3l-3 3" />
+                        </svg>
+                        <h2 class="centrar-texto front__h2">**Tarjeta de Felicitaciones**</h2>
+                    </div>
+                </div>
+
+                    <div class="tarjeta__back tarjeta__cara">
+                        <h2 class="back__h2 centrar-texto">Texto lindo</h2>
+                        <div class="tarjeta__back__contenido">
+                            <div class="card__elemento card__elemento--1">
+                                <p class="no-margin no-padding">Este es un pequeño comentario para crear y asignar el tamaño deciado de las letra y observar su diseño.</p>
+                            </div>
+                            <div class="card__elemento card__elemento--2">
+                                <p class="elemento__2">Este es un pequeño comentario para crear y asignar el tamaño deciado de las letra y observar su diseño.</p>
+                            </div>
+                            <div class="card__elemento card__elemento--3">
+                                <img src="img/presentacion.png" alt="">
+                            </div>
+                            <div class="card__elemento card__elemento--4">
+                                <button class="boton centrar-texto"><a href="whatsapp://send?phone=+526383841597">Tarjeta de regalo</a></button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </main>
+    </div>
+    <footer>
         <div class="contenido__globos" id="contenido__globos">
             <div class="globo"><img src="img/globo_rojo.png" alt="" class="led-letter"></div>
             <div class="globo"><img src="img/globo_azul.png" alt="" class="led-letter"></div>
@@ -78,8 +84,14 @@
             <div class="globo"><img src="img/globo_amarillo.png" alt="" class="led-letter"></div>
             <div class="globo"><img src="img/globo_verde.png" alt="" class="led-letter"></div>
         </div>
-
-    </div>
+        <div class="contenido__globos" id="contenido__globos">
+            <div class="globo"><img src="img/globo_verde.png" alt="" class="led-letter"></div>
+            <div class="globo"></div>
+            <div class="globo"><img src="img/globo_rojo.png" alt="" class="led-letter"></div>
+            <div class="globo"></div>
+            <div class="globo"><img src="img/globo_azul.png" alt="" class="led-letter"></div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
