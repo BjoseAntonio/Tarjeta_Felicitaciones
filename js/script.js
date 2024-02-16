@@ -33,6 +33,7 @@ function validarFormulario(){
     }
 
     if(username === "usuario" && password === "con"){
+        localStorage.setItem('sesionIniciada', 'true');
         window.location.href = "inicio.html";
         return false;
     }else{
@@ -48,6 +49,16 @@ function validarFormulario(){
 
     return true;
 }
+
+window.onload = function() {
+    // Verificar si el usuario ha iniciado sesión
+    var sesionIniciada = localStorage.getItem('sesionIniciada');
+    if (!sesionIniciada) {
+        // Redirigir a la página de inicio de sesión si no se ha iniciado sesión
+        window.location.href = 'index.html';
+    }
+};
+
 
 function mostrarMensaje(mesaje){
     document.getElementById("message").textContent = mesaje;
