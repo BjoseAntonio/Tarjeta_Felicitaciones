@@ -32,7 +32,7 @@ function validarFormulario(){
         return false;//Evita que el formulario se envie 
     }
 
-    if(username === "usuario" && password === "con"){
+    if((username === "andrea" || username === 'Andrea' || username === 'ANDREA') && (password === "16febrero" || password === '16Febrero')){
         localStorage.setItem('sesionIniciada', 'true');
         window.location.href = "inicio.html";
         return false;
@@ -61,20 +61,9 @@ function limpiarMensaje(){
     document.getElementById("message").textContent = "";
 }
 
-// document.addEventListener('DOMContentLoaded', function(){
-//     const numGlobos = 5; // Número de globos
-//     const contenedor = document.getElementById("contenido__globos");
 
-//     for (let i = 0; i < numGlobos; i++) {
-//         const globo = document.createElement("div");
-//         globo.classList.add("globo");
-//         globo.style.left = `${Math.random() * 100}vw`; // Posición horizontal aleatoria
-//         globo.style.bottom = `${Math.random() * 100}vh`; // Posición vertical aleatoria
-//         contenedor.appendChild(globo);
-//     }
+
+
+// document.getElementById("card").addEventListener("click",function(){
+//     this.classList.toggle("girada")
 // });
-
-
-document.getElementById("card").addEventListener("click",function(){
-    this.classList.toggle("girada")
-});
