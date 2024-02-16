@@ -12,6 +12,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    
    
 }
 
@@ -286,7 +287,7 @@ p{
 }
 
 .tarjeta__front--img{
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/1.jpg);
     background-color: #000000;
     opacity: .7;
     background-size: cover;
