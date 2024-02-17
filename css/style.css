@@ -287,7 +287,7 @@ p{
 }
 
 .tarjeta__front--img{
-    background-image: url(../img/1.jpg);
+    background-image: url(../img/2.jpg);/*Asignación de fondo en la parte frontal de la tarjeta*/
     background-color: #000000;
     opacity: .7;
     background-size: cover;
