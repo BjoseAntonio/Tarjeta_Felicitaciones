@@ -32,7 +32,7 @@ function validarFormulario(){
         return false;//Evita que el formulario se envie 
     }
 
-    if((username === "andrea" || username === 'Andrea' || username === 'ANDREA') && (password === "16febrero" || password === '16Febrero')){
+    if(username === "usuario"  && password === "password"){
         localStorage.setItem('sesionIniciada', 'true');
         window.location.href = "inicio.html";
         return false;
